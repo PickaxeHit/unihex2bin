@@ -21,6 +21,8 @@ Generate binary font from unifont .hex file.
 - 0表示none，1表示dot
 
 ## 使用方法
-`unihex2bin -i <unifont.hex> -o <output.bin>'
+`unihex2bin -i <unifont.hex> -o <output.bin>`
+
+
 可选参数-p可以指定覆盖平面，如-p 1则指定平面1，-p 0-3则指定平面1-平面3。默认平面0
 可选参数-c指定组合字符的偏移，格式为`-c <combining.txt>`
