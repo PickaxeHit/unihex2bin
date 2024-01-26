@@ -19,3 +19,8 @@ Generate binary font from unifont .hex file.
 - 根据读到的字形宽度来确定一个字形占的字节数，如果宽度为8则为16字节，16则为32字节
 - 先横后纵，先低位后高位，即：左上角的像素位于第一字节的最低位，右下角的像素位于最后一字节的最高位
 - 0表示none，1表示dot
+
+## 使用方法
+`unihex2bin -i <unifont.hex> -o <output.bin>'
+可选参数-p可以指定覆盖平面，如-p 1则指定平面1，-p 0-3则指定平面1-平面3。默认平面0
+可选参数-c指定组合字符的偏移，格式为`-c <combining.txt>`
